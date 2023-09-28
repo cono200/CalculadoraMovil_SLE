@@ -2,10 +2,13 @@
 {
     background-color: black;
 }
-^Grid {
-    background-color: white;
+
+button.BotonesNaranja {
+    color: #C46234;
+    background-color: black;
 }
 
 button.Botones {
-    background-color: orange;
+    background-color: black;
+    color:white;
 }
