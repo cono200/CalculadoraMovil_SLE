@@ -1,0 +1,11 @@
+﻿^ContentPage
+{
+    background-color: black;
+}
+^Grid {
+    background-color: white;
+}
+
+button.Botones {
+    background-color: orange;
+}
