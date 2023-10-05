@@ -6,30 +6,29 @@
         <StyleSheetExtension Source="/estilo\Estilo.css"/>
     </ContentPage.Resources>
     <StackLayout>
-        <Grid>
-            <Label Text="Resultado"></Label>
-        </Grid>
-        <Grid Margin="5">
-            <Button Text="AC"  Grid.Column="0" Grid.Row="7"  StyleClass="BotonesNaranja"   ></Button>
-            <Button Text="flecha"  Grid.Column="1" Grid.Row="7"  StyleClass="BotonesNaranja"></Button>
-            <Button Text="%" Grid.Column="2" Grid.Row="7"  StyleClass="BotonesNaranja"></Button>
-            <Button Text="/"   Grid.Column="3" Grid.Row="7"  StyleClass="BotonesNaranja"></Button>
-            <Button Text="7" Grid.Column="0" Grid.Row="8"  StyleClass="Botones"></Button>
-            <Button Text="8" Grid.Column="1" Grid.Row="8" StyleClass="Botones"></Button>
-            <Button Text="9" Grid.Column="2" Grid.Row="8"  StyleClass="Botones"></Button>
-            <Button Text="X" Grid.Column="3" Grid.Row="8"  StyleClass="Botones"></Button>
-            <Button Text="4" Grid.Column="0" Grid.Row="9"  StyleClass="Botones"></Button>
-            <Button Text="5" Grid.Column="1" Grid.Row="9"  StyleClass="Botones"></Button>
-            <Button Text="6" Grid.Column="2" Grid.Row="9"  StyleClass="Botones"></Button>
-            <Button Text="-" Grid.Column="3" Grid.Row="9"  StyleClass="Botones"></Button>
-            <Button Text="1" Grid.Column="0" Grid.Row="10"  StyleClass="Botones"></Button>
-            <Button Text="2" Grid.Column="1" Grid.Row="10"  StyleClass="Botones"></Button>
-            <Button Text="3" Grid.Column="2" Grid.Row="10"  StyleClass="Botones"></Button>
-            <Button Text="+" Grid.Column="3" Grid.Row="10"  StyleClass="Botones"></Button>
-            <Button Text="a" Grid.Column="0" Grid.Row="11"  StyleClass="Botones"></Button>
-            <Button Text="0" Grid.Column="1" Grid.Row="11"  StyleClass="Botones"></Button>
-            <Button Text="." Grid.Column="2" Grid.Row="11"  StyleClass="Botones"></Button>
-            <Button Text="=" Grid.Column="3" Grid.Row="11"  StyleClass="Botones"></Button>
+
+        <Grid Margin="5" >
+            <Button Text="AC"  FontSize="37"  Grid.Column="0" Grid.Row="7"  StyleClass="BotonesNaranja" Clicked="Limpiar"  ></Button>
+            <Label x:Name="Pantalla"   Grid.Row="6" Grid.Column="0" FontSize="20" TextColor="White"></Label>
+            <Button Text="flecha"   FontSize="37" Grid.Column="1" Grid.Row="7"  StyleClass="BotonesNaranja"></Button>
+            <Button Text="%" Grid.Column="2"  FontSize="37" Grid.Row="7"  StyleClass="BotonesNaranja" Clicked="operador"></Button>
+            <Button Text="÷"   Grid.Column="3"  FontSize="37" Grid.Row="7"  StyleClass="BotonesNaranja" Clicked="operador" ></Button>
+            <Button Text="7" Grid.Column="0" Grid.Row="8"  StyleClass="Botones" Clicked="numeros"  FontSize="37"></Button>
+            <Button Text="8" Grid.Column="1"  FontSize="37" Grid.Row="8" StyleClass="Botones" Clicked="numeros"></Button>
+            <Button Text="9" Grid.Column="2"  FontSize="37" Grid.Row="8"  StyleClass="Botones" Clicked="numeros"></Button>
+            <Button Text="x" Grid.Column="3"  FontSize="37" Grid.Row="8"  StyleClass="Botones" Clicked="operador"></Button>
+            <Button Text="4" Grid.Column="0"  FontSize="37" Grid.Row="9"  StyleClass="Botones" Clicked="numeros"></Button>
+            <Button Text="5" Grid.Column="1"  FontSize="37" Grid.Row="9"  StyleClass="Botones" Clicked="numeros"></Button>
+            <Button Text="6" Grid.Column="2"  FontSize="37" Grid.Row="9"  StyleClass="Botones" Clicked="numeros"></Button>
+            <Button Text="-" Grid.Column="3"  FontSize="37" Grid.Row="9"  StyleClass="Botones" Clicked="operador"></Button>
+            <Button Text="1" Grid.Column="0"  FontSize="37" Grid.Row="10"  StyleClass="Botones" Clicked="numeros"></Button>
+            <Button Text="2" Grid.Column="1"  FontSize="37" Grid.Row="10"  StyleClass="Botones" Clicked="numeros"></Button>
+            <Button Text="3" Grid.Column="2"  FontSize="37" Grid.Row="10"  StyleClass="Botones" Clicked="numeros"></Button>
+            <Button Text="+" Grid.Column="3"  FontSize="37" Grid.Row="10"  StyleClass="Botones" Clicked="operador"></Button>
+            <Button Text="a" Grid.Column="0"  FontSize="37" Grid.Row="11"  StyleClass="Botones"></Button>
+            <Button Text="0" Grid.Column="1"  FontSize="37" Grid.Row="11"  StyleClass="Botones" Clicked="numeros"></Button>
+            <Button Text="." Grid.Column="2"  FontSize="37" Grid.Row="11"  StyleClass="Botones" Clicked="punto"></Button>
+            <Button Text="=" Grid.Column="3"  FontSize="37" Grid.Row="11"  StyleClass="Botones" Clicked="igual"></Button>
 
         </Grid>
     </StackLayout>
